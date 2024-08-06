@@ -1,0 +1,31 @@
+run_sim_nominal: false # Bool
+imaging_type: "2D"  # string: Either "2D" or "3D"
+input_files:
+    field_config_file: "quadratic_field.mat"
+    image_file: "fastmri_052.mat"
+simulation_parameters_2D: # Fill this section out if imaging type == "2D"
+    grid_cube_size: 0.003 # meters
+    FOV_x: 0.42           # meters
+    FOV_y: 0.42           # meters
+    ADC_total_time: 0.003 # seconds
+    slice_location: 0     # meters
+    Δxy:  0.003           # meters
+    Δz: 0.005             # meters
+    BGz_:  0.004           # Tesla/m
+    lower_lims: [-0.21, -0.21, -0.21] # meters
+    upper_lims: [0.21, 0.21, 0.21]    # meters
+    sequence_name: "spin_echo"        # string: Other implemented options: {"spin_echo", "single_shot_spin_echo_epi", "turbo_spin_echo", "single_shot_gradient_echo_epi","gradient_echo_3d"}
+    order: "first"                    # string: Either "zero" or "first"
+    tsf: 1                            # Int
+simulation_parameters_3D: # Fill this section out if imaging type == "3D"
+    grid_cube_size: 0.003 # meters
+    FOV_x: 0.42           # meters
+    FOV_y: 0.42           # meters
+    FOV_z: 0.42           # meters
+    ADC_total_time: 0.003 # seconds
+    Δxyz:  0.003          # meters
+    lower_lims: [-0.21, -0.21, -0.21] # meters
+    upper_lims: [0.21, 0.21, 0.21]    # meters
+    sequence_name: "gradient_echo_3d" # string: this is the only implemented option
+    order: "first"                    # string: Either "zero" or "first"
+    tsf: 1                            # Int: this is the only option 
