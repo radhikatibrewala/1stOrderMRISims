@@ -9,7 +9,8 @@
 This repository contains code to perform 1<sup>st</sup>-order spatial encoding MRI simulations, developed especially for highly variable and inhomogeneous main magnetic (B<sub>0</sub>) and gradient fields (BG<sub>xyz</sub>). This simulation code is a starting point for exploring how to capture the encoding effects of strong field variations accurately and efficiently to enable the assessment of distortions, signal dropout, and foldover artifacts.
 
 The following figure determines an example scenario in which these simulations can be used for improved accuracy:
-![why1st][https://github.com/radhikatibrewala/1stOrderMRISims/image.png]
+
+![why1st][https://github.com/radhikatibrewala/1stOrderMRISims/blob/master/image.png]
 
 For more details, please refer to the paper.
 
