@@ -1,4 +1,4 @@
-# 1<sup>ST<sup> ORDER MRI SIMS
+# 1<sup>ST</sup> ORDER MRI SIMS
 ## First-order Spatial Encoding Simulations for Improved Accuracy in the Presence of Strong $\mathrm{B}_0$ and Gradient Field Variations
 
 [[`Paper`]()] [[`Github`](XXLINK)] [[`BibTeX`](#cite)]
@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository contains code to perform 1<sup>st<sup>-order spatial encoding MRI simulations, developed especially for highly variable and inhomogeneous main magnetic (B<sub>0<sub>) and gradient fields (BG<sub>xyz<sub>). This simulation code is a starting point for exploring how to captures the encoding effects of strong field variations accurately and efficiently to enable the assessment of distortions, signal dropout, and foldover artifacts.
+This repository contains code to perform 1<sup>st</sup>-order spatial encoding MRI simulations, developed especially for highly variable and inhomogeneous main magnetic (B<sub>0<sub>) and gradient fields (BG<sub>xyz<sub>). This simulation code is a starting point for exploring how to captures the encoding effects of strong field variations accurately and efficiently to enable the assessment of distortions, signal dropout, and foldover artifacts.
 
 For more details, please refer to the paper.
 
@@ -14,10 +14,10 @@ For more details, please refer to the paper.
 
 The code requires `julia >= v"1.9.0"`
 
-Install 1<sup>ST<sup> ORDER MRI SIMS: clone the repository locally and install with
+Install 1<sup>ST</sup> ORDER MRI SIMS: clone the repository locally and install with
 
 ```
-git clone https://github.com/radhikatibrewala/1stordersims.git
+git clone https://github.com/radhikatibrewala/1stOrderMRISims.git
 
 ```
 
@@ -33,23 +33,16 @@ The repository is centered around the ```MainSlurm.jl``` file. The following bre
 ```FinalImageSim```: Final file to be run once `MainSlurm.jl` has finished running, to create the image from the simulated k-space
 
 
-```
-python fastmri_prostate_recon.py \  
-    --data_path <path to dataset> \  
-    --output_path <path to store recons> \  
-    --sequence <t2/dwi/both>
-```
-
 ## Hardware Requirements
 This is a very computationally heavy code and has been tested on High Performance Computing Systems. Julia uses [`threads`](https://docs.julialang.org/en/v1/manual/multi-threading/) to speed up the calculation by splitting it on multiple cores. To run the example gen_kspace.sh file, you will need:
 - A computer with at least 256GB of RAM
 - A multi-core CPU
 
 ## License
-1<sup>ST<sup> ORDER MRI SIMS is MIT licensed, as found in [LICENSE file](XXLINK)
+1<sup>ST</sup> ORDER MRI SIMS is MIT licensed, as found in [LICENSE file](https://github.com/radhikatibrewala/1stOrderMRISims/LICENSE)
 
 ## Cite
-If you use the 1<sup>ST<sup> ORDER MRI SIMS code in your research, please use the following BibTeX entry.
+If you use the 1<sup>ST</sup> ORDER MRI SIMS code in your research, please use the following BibTeX entry.
 
 ```
 
