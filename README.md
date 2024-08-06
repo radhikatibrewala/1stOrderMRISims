@@ -1,7 +1,7 @@
 # 1<sup>ST</sup> ORDER MRI SIMS
 ## First-order Spatial Encoding Simulations for Improved Accuracy in the Presence of Strong $\mathrm{B}_0$ and Gradient Field Variations
 
-[[`Paper`]()] [[`Github`](XXLINK)] [[`BibTeX`](#cite)]
+[[`Paper`]()] [[`Github`](https://github.com/radhikatibrewala/1stOrderMRISims)] [[`BibTeX`](#cite)]
 
 
 ## Overview
